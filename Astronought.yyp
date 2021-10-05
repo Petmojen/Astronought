@@ -43,6 +43,7 @@
     {"id":{"name":"oEnemieController","path":"objects/oEnemieController/oEnemieController.yy",},"order":0,},
     {"id":{"name":"oLittleBoy","path":"objects/oLittleBoy/oLittleBoy.yy",},"order":2,},
     {"id":{"name":"sPlanetHandler","path":"sprites/sPlanetHandler/sPlanetHandler.yy",},"order":3,},
+    {"id":{"name":"Explosion","path":"sprites/Explosion/Explosion.yy",},"order":21,},
     {"id":{"name":"Laser","path":"sprites/Laser/Laser.yy",},"order":3,},
     {"id":{"name":"Shooter","path":"sprites/Shooter/Shooter.yy",},"order":1,},
     {"id":{"name":"oLaser","path":"objects/oLaser/oLaser.yy",},"order":0,},
