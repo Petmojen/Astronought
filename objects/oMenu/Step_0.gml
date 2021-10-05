@@ -1,6 +1,6 @@
 key_up = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up);
 key_down = keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down);
-key_accept = keyboard_check_pressed(ord("Enter")) || keyboard_check_pressed(vk_space);
+key_accept = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space);
 
 if key_down || key_up {audio_play_sound(MenuUpDown, 10, false)};
 
@@ -19,14 +19,14 @@ if(key_accept){
 			break;
 		//Controls
 		case 2:
+			//draw controler image
 			break;
 		//Credits
 		case 3:
+			drawDecide = 3;
 			break;
 		//
 		case 4:
-			break;
-		case 5:
 			game_end();
 			break;
 		}
