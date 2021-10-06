@@ -15,7 +15,8 @@ switch(drawDecide){
 	case 1:
 		break;
 	case 2:
-		//draw image of controls
+		draw_sprite(controlls, image_index, room_width/2, room_height/2);
+		if keyboard_check_pressed(vk_escape){drawDecide = 0};
 		break;
 	case 3:
 		draw_set_font(fFipps);
