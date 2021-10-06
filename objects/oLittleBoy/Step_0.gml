@@ -8,3 +8,7 @@ if(x <= room_width-100){
 		shootingFrame = 380;
 	}
 }
+
+if(x > room_width+80 ||x < -80){
+	instance_destroy();
+}

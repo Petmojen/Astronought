@@ -19,7 +19,7 @@ if(key_accept){
 			break;
 		//Controls
 		case 2:
-			//draw controler image
+			drawDecide = 2;
 			break;
 		//Credits
 		case 3:
