@@ -1,36 +1,35 @@
-//This script randomizes spawn position, if its 100 pixels or closer from the last enemy it will randomize again. 
+checkPlayerPos = instance_id_get(1);
 
 spawnTimer -= 1;
 
-
-if(global.scoreSystem < 20000 && (spawnTimer % 30) == 0) 
-{
-    instance_create_depth(room_width+50, room_height/2, 1, enemyArray[0])
-	spawnTimer = 60;
+if(global.scoreSystem < 150000) {
+    speederYPos = random_range(100, room_height - 100);
+    clamp(speederYPos, 0, room_height);
+    if(spawnTimer = 0) {
+        instance_create_depth(room_width+50, speederYPos, 1, enemyArray[0])
+    }
 }
 
-if(global.scoreSystem >= 20000 && global.scoreSystem < 50000 && spawnTimer = 0)
+if(/*global.scoreSystem >= 20000 &&*/ global.scoreSystem < 150000)
 {
 	shooterYPos = random_range(100, room_height - 100);
-	while(shooterYPos <= oldYpos+60 && shooterYPos >= oldYpos-60){
-		shooterYPos = random_range(100, room_height - 100);
+	if(spawnTimer = 0) {
+		instance_create_depth(room_width+50, shooterYPos, 1, enemyArray[1])	
 	}
-	
-	instance_create_depth(room_width+50, shooterYPos, 1, enemyArray[1])	
-	oldYpos = shooterYPos;
-	spawnTimer = 120;
 }
 
-if(global.scoreSystem >= 50000 && spawnTimer = 0)
+if(global.scoreSystem <= 150000)
 {
 	littleBoyYPos = random_range(100, room_height - 100);
-	while(littleBoyYPos <= oldYpos+60 && littleBoyYPos >= oldYpos-60){
-		littleBoyYPos = random_range(100, room_height - 100);
+	if (spawnTimer = 0) {
+		with(instance_create_depth(room_width+50, littleBoyYPos, 1, enemyArray[2])){
+			speed -= 0.25;
+		}
 	}
-	
-	with(instance_create_depth(room_width+50, littleBoyYPos, 1, enemyArray[2])){
-		speed -= 0.25;
-	}
-	oldYpos = littleBoyYPos;
+}
+
+
+if(spawnTimer = 0)
+{
 	spawnTimer = 60;
 }

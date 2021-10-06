@@ -2,6 +2,8 @@ enemyArray[0] = oSpeeder;
 enemyArray[1] = oShooter;
 enemyArray[2] = oLittleBoy;
 destoyerSize = 0.25;
+alphaFloat = 0.25;
+image_alpha = alphaFloat;
 
 targetTimer = 5;
 
