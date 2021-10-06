@@ -1,1 +1,1 @@
-global.scoreSystem =  50000;
+global.scoreSystem =  0;
