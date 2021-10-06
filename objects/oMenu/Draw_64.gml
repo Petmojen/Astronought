@@ -18,7 +18,7 @@ switch(drawDecide){
 		draw_sprite(controlls, image_index, room_width/2, room_height/2);
 		if keyboard_check_pressed(vk_escape){drawDecide = 0};
 		break;
-	case 3:
+	case 4:
 		draw_set_font(fFipps);
 		draw_set_color(c_white);
 		for(i = 0; i < creditsLength; i++){

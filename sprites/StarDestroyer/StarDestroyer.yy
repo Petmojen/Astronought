@@ -9,13 +9,13 @@
   "swfPrecision": 2.525,
   "bbox_left": 2,
   "bbox_right": 840,
-  "bbox_top": 3,
-  "bbox_bottom": 415,
+  "bbox_top": 2,
+  "bbox_bottom": 414,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 842,
-  "height": 419,
+  "height": 416,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"bffa8e5d-283b-4dca-952d-770836cc71b3","path":"sprites/StarDestroyer/StarDestroyer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bffa8e5d-283b-4dca-952d-770836cc71b3","path":"sprites/StarDestroyer/StarDestroyer.yy",},"LayerId":{"name":"62d4e11c-d126-4660-bf8f-8f014eec745a","path":"sprites/StarDestroyer/StarDestroyer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"StarDestroyer","path":"sprites/StarDestroyer/StarDestroyer.yy",},"resourceVersion":"1.0","name":"bffa8e5d-283b-4dca-952d-770836cc71b3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e1eedbe4-3d82-47e3-a9f9-a36bdae8c74f","path":"sprites/StarDestroyer/StarDestroyer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e1eedbe4-3d82-47e3-a9f9-a36bdae8c74f","path":"sprites/StarDestroyer/StarDestroyer.yy",},"LayerId":{"name":"8b2d8994-b90c-4265-8daa-db4fae47ed58","path":"sprites/StarDestroyer/StarDestroyer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"StarDestroyer","path":"sprites/StarDestroyer/StarDestroyer.yy",},"resourceVersion":"1.0","name":"e1eedbe4-3d82-47e3-a9f9-a36bdae8c74f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"StarDestroyer","path":"sprites/StarDestroyer/StarDestroyer.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3e6c53fe-1ff9-4138-8aa3-19ac10778c83","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bffa8e5d-283b-4dca-952d-770836cc71b3","path":"sprites/StarDestroyer/StarDestroyer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7ebf7fdb-f038-4016-b3e8-8942b9191ce3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e1eedbe4-3d82-47e3-a9f9-a36bdae8c74f","path":"sprites/StarDestroyer/StarDestroyer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -55,7 +55,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 421,
-    "yorigin": 209,
+    "yorigin": 208,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"StarDestroyer","path":"sprites/StarDestroyer/StarDestroyer.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"62d4e11c-d126-4660-bf8f-8f014eec745a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8b2d8994-b90c-4265-8daa-db4fae47ed58","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

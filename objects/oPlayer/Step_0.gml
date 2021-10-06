@@ -70,6 +70,7 @@ if(fireBool = 1){
 
 if(global.playerHealthPoints <= 0){
 	global.gameOver	= 1;
+	instance_destroy(oJetpackFlames);
 	instance_destroy();
 }
 

@@ -1,12 +1,14 @@
 enemyArray[0] = oSpeeder;
 enemyArray[1] = oShooter;
 enemyArray[2] = oLittleBoy;
-destoyerSize = 0.25;
 
-targetTimer = 5;
+speedFloat = 0.25;
+
+destoyerSize = 0.25;
+alphaFloat = 0.5;
+
+global.targetTimer = 5;
 
 hangar01x = -4;
-hangar01y = 14;
-
 hangar02x = 18;
-hangar02y = 14;
+hangary = 14;

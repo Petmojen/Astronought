@@ -22,11 +22,11 @@ if(key_accept){
 			drawDecide = 2;
 			break;
 		//Credits
-		case 3:
-			drawDecide = 3;
-			break;
-		//
 		case 4:
+			drawDecide = 4;
+			break;
+		
+		case 5:
 			game_end();
 			break;
 		}
