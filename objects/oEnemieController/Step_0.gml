@@ -1,4 +1,7 @@
+//This script randomizes spawn position, if its 100 pixels or closer from the last enemy it will randomize again. 
+
 spawnTimer -= 1;
+
 
 if(global.scoreSystem < 20000 && spawnTimer = 0) 
 {
@@ -36,10 +39,4 @@ if(global.scoreSystem >= 50000 && spawnTimer = 0)
 	}
 	oldYpos = littleBoyYPos;
 	spawnTimer = 60;
-}
-
-
-if(spawnTimer = 0)
-{
-	
 }
