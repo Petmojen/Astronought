@@ -1,21 +1,18 @@
-if(image_xscale < -10)
+if(image_xscale < 10)
 {
-	image_xscale -= 0.5;
+	image_xscale += 0.5;
+	image_yscale += 0.1;
 }
-
-if (image_xscale >= -10 && x >= 0)
+else if (image_xscale >= 10 && laserTime <120)
 {
-	image_xscale -= 2;
+	image_xscale += 5;
+	laserTime++;
 }
 else 
 {
-	laserTime++;
+	speed -= 15;
 }
 
-if(laserTime = 380){
-	speed -= 20;
-}
-
-if(x < image_xscale ||!place_meeting(x,y,oLittleBoy)){
+if(x < image_xscale){
 	instance_destroy();
 }

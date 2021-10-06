@@ -1,5 +1,3 @@
-checkPlayerPos = instance_id_get(1);
-
 spawnTimer -= 1;
 
 if(global.scoreSystem < 20000) {
