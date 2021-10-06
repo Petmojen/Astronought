@@ -1,9 +1,7 @@
-if(x >= room_width-150){
-	x -= 5;
-} else {
-	x -= 15;	
-}
+x -= 5;
 
-if(x > room_width+57 ||x < -57){
-	instance_destroy();
-}
+
+k = k + pi/2;
+
+y = yStart + Amplitude * dsin(k + sinMove);
+
