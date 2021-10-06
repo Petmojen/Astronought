@@ -3,15 +3,9 @@
 spawnTimer -= 1;
 
 
-if(global.scoreSystem < 20000 && spawnTimer = 0) 
+if(global.scoreSystem < 20000 && (spawnTimer % 30) == 0) 
 {
-	speederYPos = random_range(100, room_height - 100);
-	while(speederYPos <= oldYpos+40 && speederYPos >= oldYpos-40){
-		speederYPos = random_range(100, room_height - 100);
-	}
-	
-    instance_create_depth(room_width+50, speederYPos, 1, enemyArray[0])
-	oldYpos = speederYPos;
+    instance_create_depth(room_width+50, room_height/2, 1, enemyArray[0])
 	spawnTimer = 60;
 }
 
