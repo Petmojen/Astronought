@@ -15,19 +15,15 @@ if(keyboard_check(ord("1"))){
 	weaponSelect = 1;
 }
 
-if(weaponSelect = 1 && global.superPoints = 100 && keyboard_check_pressed(ord("E"))){
-	
-}
-
-if(weaponSelect = 0){
+if(weaponSelect = 1){
 	shootingCooldown -= 1;
-	shootingCooldown = clamp(shootingCooldown, 0, 25);
-
+	shootingCooldown = clamp(shootingCooldown, 0, 10);
 	if(keyboard_check(vk_space) && shootingCooldown <= 0){
 		chargeRate += 1;
 		clamp(chargeRate, 0, 120);
-		scaleY = chargeRate/50;
-		scaleX = chargeRate/80;
+		scaleY = chargeRate/80;
+		scaleX = chargeRate/20;
+		if(chargeGun = 0){instance_create_depth(x+36, y-6, 1, oChargeGun); chargeGun = 1};
 		if(chargeRate >= 120) {
 			fireBool = 1;
 			shootingCooldown = 60;
@@ -35,22 +31,41 @@ if(weaponSelect = 0){
 			//audio_play_sound(PlayerShoot, 10, false); bigger sound
 		}
 	} else {
+		instance_destroy(oChargeGun);
+		chargeGun = 0;
 		chargeRate = 0;
 	}
+}
 
-	if(keyboard_check_released(vk_space) && shootingCooldown <= 0){
+if(weaponSelect = 0){
+	shootingCooldown -= 1;
+	shootingCooldown = clamp(shootingCooldown, 0, 10);
+	
+
+	if(keyboard_check(vk_space) && shootingCooldown <= 0){
+		chargeRate = 1;
+		scaleY = chargeRate/80;
+		scaleX = chargeRate/20;
 		fireBool = 1;
-		shootingCooldown = 25;
+		shootingCooldown = 10;
 		audio_play_sound(PlayerShoot, 10, false);
 	}
+}
 
-	if(fireBool = 1){
-		with(instance_create_depth(x+42, y+2, 1, oLaser)){
+if(fireBool = 1){
+		with(instance_create_depth(x+26, y-10, 1, oLaser)){
 				speed = 10;
+				randomDirection = random_range(-3, 3);
+				direction = randomDirection;
+				image_angle = randomDirection;
+				image_xscale += other.scaleX;
 				image_yscale += other.scaleY;
 		}
+		instance_destroy(oChargeGun);
+		//rekyl
+		x -= 10 + scaleX*10;
+		chargeGun = 0;
 		fireBool = 0;
-	}
 }
 
 if(global.playerHealthPoints <= 0){
