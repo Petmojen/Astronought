@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 169,
+  "bbox_right": 153,
   "bbox_top": 0,
-  "bbox_bottom": 119,
+  "bbox_bottom": 87,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 170,
-  "height": 120,
+  "width": 154,
+  "height": 88,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"9e72ccb3-60f1-4832-9d97-81fd1ad32547","path":"sprites/Shooter/Shooter.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9e72ccb3-60f1-4832-9d97-81fd1ad32547","path":"sprites/Shooter/Shooter.yy",},"LayerId":{"name":"664e0920-ccc5-4494-9eff-8867a9b86174","path":"sprites/Shooter/Shooter.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Shooter","path":"sprites/Shooter/Shooter.yy",},"resourceVersion":"1.0","name":"9e72ccb3-60f1-4832-9d97-81fd1ad32547","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ccc57635-39f5-4cc6-8ee9-b7fddc6fc76a","path":"sprites/Shooter/Shooter.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ccc57635-39f5-4cc6-8ee9-b7fddc6fc76a","path":"sprites/Shooter/Shooter.yy",},"LayerId":{"name":"b604864b-08c4-4913-8767-8366f2825ef1","path":"sprites/Shooter/Shooter.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Shooter","path":"sprites/Shooter/Shooter.yy",},"resourceVersion":"1.0","name":"ccc57635-39f5-4cc6-8ee9-b7fddc6fc76a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"Shooter","path":"sprites/Shooter/Shooter.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4f1a9f60-e5b1-496b-8179-340424aea57a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9e72ccb3-60f1-4832-9d97-81fd1ad32547","path":"sprites/Shooter/Shooter.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3cf88e1b-7a73-4d57-a684-6e9dae3271f8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ccc57635-39f5-4cc6-8ee9-b7fddc6fc76a","path":"sprites/Shooter/Shooter.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 85,
-    "yorigin": 60,
+    "xorigin": 77,
+    "yorigin": 44,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Shooter","path":"sprites/Shooter/Shooter.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"664e0920-ccc5-4494-9eff-8867a9b86174","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b604864b-08c4-4913-8767-8366f2825ef1","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
