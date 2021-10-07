@@ -1,8 +1,9 @@
-if(checkHighscore = 1){
+if(global.checkHighscore = 1){
 	//make array of ini list
 	ini_open("highscore.ini"){
 		for(i = 0; i <= 9; i++){
 			drawHighScore[i] = ini_read_string("highscore", i, "No score");
+			show_debug_message(drawHighScore[i]);
 		}
 	}
 	//check array if score is bigger

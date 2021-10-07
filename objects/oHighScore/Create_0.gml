@@ -1,4 +1,4 @@
-checkHighscore = 0;
+global.checkHighscore = 0;
 changeScore = 0;
 
 drawHighScore[0] = "";

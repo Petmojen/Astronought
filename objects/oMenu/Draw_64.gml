@@ -3,7 +3,6 @@ switch(drawDecide){
 	case 0:
 		draw_set_font(fOver_There);
 		draw_text(x, y, "Astronought");
-
 		draw_set_font(fFipps);
 		for(i = 0; i < printLength; i++){
 	
