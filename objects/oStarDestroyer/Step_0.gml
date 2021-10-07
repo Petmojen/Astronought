@@ -118,5 +118,66 @@ if(global.targetTimer = 0 && global.stage = 1){
 	}
 	
 } else if (global.stage = 4.5){
+	if(x < room_width){
+		x = 2222
+		speedFloat = 8
+		y = random_range(96,544);
+	}
+	else if(x <= 1568  && x >= 1504){
+		global.stage = 4.75;
+		speedFloat = 0;
+	}
+}
+else if (global.stage = 4.75)
+{
+	bossShootingFrame -= 1;
+	if(bossWeaponType = 1 && bossShootingFrame = 0)
+	{
+		
+		if(bossTimesShot <= 4)
+		{
+			with(instance_create_depth(x- 380, y + 190, 5, oShooterBullet))
+			{
+				speed -= 20;
+			}
+			with(instance_create_depth(x- 380, y + 150, 5, oShooterBullet))
+			{
+				speed -= 20;
+			}
+			bossTimesShot +=1;
+			bossShootingFrame = 30;
+		}
+		
+		if(bossTimesShot > 4)
+		{
+			bossWeaponType = 2;
+			bossTimesShot = 0;
+			bossShootingFrame = 90;
+			missileCounter +=1;
+
+		}
+	}
+		
+	if(bossWeaponType = 2 && bossShootingFrame = 0)
+	{
+		instance_create_depth(x-520, y + 110, 5, oLittleBoyLaser)
+		
+		bossWeaponType = 1;
+		bossShootingFrame = 60;
+		missileCounter +=1;
+	}
 	
+	if(missileCounter = 2)
+	{
+		
+	}
+	
+	if(y <= (checkPlayerPos.y - 60) || y >= (checkPlayerPos.y - 165))
+	{
+		move_towards_point(x, checkPlayerPos.y-125, 0.5)
+	}
+	else
+	{
+		speed = 0;
+	}
 }
