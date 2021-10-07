@@ -6,7 +6,6 @@ image_alpha = alphaFloat;
 global.targetTimer -= 1;
 stopEnemies -= 1;
 clamp(stopEnemies, 0, 1800);
-show_debug_message(global.stage);
 
 if(global.stage == 1.5){
 	if(x >= -300 && global.targetTimer <= 0){
