@@ -126,7 +126,7 @@ if(global.targetTimer = 0 && global.stage = 1){
 		randEnemies2 = irandom_range(0, 2);
 		oEnemieController.spawnTimer = 60;
 		global.targetTimer = 30;
-		stopEnemies = 120;
+		stopEnemies = 1800;
 		global.stage = 4.25;
 	}
 } else if(global.stage = 4.25 && global.targetTimer = 0){
