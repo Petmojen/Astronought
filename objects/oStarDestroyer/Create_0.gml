@@ -20,4 +20,3 @@ hangar01x = -4;
 hangar02x = 18;
 hangary = 14;
 stopEnemies = 1800;
-wait = 420;

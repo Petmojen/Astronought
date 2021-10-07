@@ -5,6 +5,7 @@ image_alpha = alphaFloat;
 
 global.targetTimer -= 1;
 stopEnemies -= 1;
+clamp(stopEnemies, 0, 1800);
 
 if(global.stage == 1.5){
 	if(x >= -300 && global.targetTimer <= 0){
@@ -125,6 +126,7 @@ if(global.targetTimer = 0 && global.stage = 1){
 		randEnemies2 = irandom_range(0, 2);
 		oEnemieController.spawnTimer = 60;
 		global.targetTimer = 30;
+		stopEnemies = 1800;
 		global.stage = 4.25;
 	}
 } else if(global.stage = 4.25 && global.targetTimer = 0){
@@ -178,7 +180,6 @@ if(global.targetTimer = 0 && global.stage = 1){
 } else if(global.stage = 4.30){
 	global.targetTimer = 999999999999999;
 	oEnemieController.spawnTimer = 9999999999999999;
-	wait -= 1;
 	if(y > -375){
 		y -= 1;
 	} else {
