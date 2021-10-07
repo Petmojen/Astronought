@@ -3,7 +3,6 @@ if(checkHighscore = 1){
 	ini_open("highscore.ini"){
 		for(i = 0; i <= 9; i++){
 			drawHighScore[i] = ini_read_string("highscore", i, "No score");
-			show_debug_message(drawHighScore[i]);
 		}
 	}
 	//check array if score is bigger
@@ -13,8 +12,6 @@ if(checkHighscore = 1){
 			scoreStore = scoreStore + nextChar;
 		}
 		if(scoreStore < global.scoreSystem){
-			show_debug_message("PushDown:" + scoreStore);
-			show_debug_message(a);
 			changeScore = 1;
 			for(i = 9; i >= a; i -= 1){
 				drawHighScore[i] = drawHighScore[i - 1];

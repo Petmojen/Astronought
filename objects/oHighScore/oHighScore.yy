@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sHighScore",
+    "path": "sprites/sHighScore/sHighScore.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -7,11 +7,9 @@ if(changeScore = 1){
 		drawHighScore[a] = newHighScore;
 		ini_open("highscore.ini"){
 			for(i = 0; i <= 9; i++){
-				show_debug_message(drawHighScore);
-				//ini_write_string("highscore", i, drawHighScore[i]);
+				ini_write_string("highscore", i, drawHighScore[i]);
 			}
 		}
-		show_debug_message(drawHighScore);
 		changeScore = 0;
 		ini_close();
 	}
