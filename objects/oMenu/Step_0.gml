@@ -16,19 +16,19 @@ if(key_accept){
 		case 0:
 			room_goto_next();
 			break;
-		//Sound options
-		case 1:
-			break;
 		//Controls
-		case 2:
+		case 1:
 			drawDecide = 2;
 			break;
+		case 2:
+			drawDecide = 3;
+			break;
 		//Credits
-		case 4:
+		case 3:
 			drawDecide = 4;
 			break;
 		
-		case 5:
+		case 4:
 			game_end();
 			break;
 		}

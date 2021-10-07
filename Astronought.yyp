@@ -11,7 +11,6 @@
     {"id":{"name":"oShooterIdle","path":"objects/oShooterIdle/oShooterIdle.yy",},"order":2,},
     {"id":{"name":"Stars","path":"sprites/Stars/Stars.yy",},"order":2,},
     {"id":{"name":"oSuperBar","path":"objects/oSuperBar/oSuperBar.yy",},"order":2,},
-    {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},"order":2,},
     {"id":{"name":"oLittleBoyLaser","path":"objects/oLittleBoyLaser/oLittleBoyLaser.yy",},"order":3,},
     {"id":{"name":"LittleBoyLaser","path":"sprites/LittleBoyLaser/LittleBoyLaser.yy",},"order":4,},
     {"id":{"name":"_01___blaster_master_opening","path":"sounds/_01___blaster_master_opening/_01___blaster_master_opening.yy",},"order":10,},
@@ -106,7 +105,6 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
