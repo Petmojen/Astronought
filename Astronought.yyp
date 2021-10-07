@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"EnemyController","path":"sprites/EnemyController/EnemyController.yy",},"order":0,},
+    {"id":{"name":"sGameOver","path":"sprites/sGameOver/sGameOver.yy",},"order":25,},
     {"id":{"name":"oPlanet03","path":"objects/oPlanet03/oPlanet03.yy",},"order":2,},
     {"id":{"name":"ohealthBar","path":"objects/ohealthBar/ohealthBar.yy",},"order":0,},
     {"id":{"name":"sSpeeder","path":"sprites/sSpeeder/sSpeeder.yy",},"order":2,},
