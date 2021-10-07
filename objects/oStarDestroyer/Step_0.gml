@@ -180,8 +180,7 @@ if(global.targetTimer = 0 && global.stage = 1){
 	}
 } else if (global.stage = 4.5){
 	if(x < room_width){
-		x = 2222
-		speedFloat = 8
+		x = 2222;
 		y = random_range(96,544);
 	}
 	else if(x <= 1568  && x >= 1504){
@@ -235,7 +234,7 @@ else if (global.stage = 4.75)
 	
 	if(y <= (checkPlayerPos.y - 60) || y >= (checkPlayerPos.y - 165))
 	{
-		move_towards_point(x, checkPlayerPos.y-125, 0.5)
+		move_towards_point(x, checkPlayerPos.y-125, 0.75)
 	}
 	else
 	{

@@ -1,5 +1,5 @@
 randomize();
-checkPlayerPos = instance_id_get(1);
+checkPlayerPos = instance_id_get(0);
 
 enemyArray[0] = oSpeeder;
 enemyArray[1] = oShooter;
