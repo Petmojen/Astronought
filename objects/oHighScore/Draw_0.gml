@@ -1,4 +1,6 @@
 if(changeScore = 1){
+	draw_set_halign(fa_center);
+	draw_set_font(fFipps);
 	draw_text(room_width/2, room_height/2, textInput);
 	if(string_length(textInput) <= 2){
 		textInput = keyboard_string;
@@ -10,6 +12,7 @@ if(changeScore = 1){
 				ini_write_string("highscore", i, drawHighScore[i]);
 			}
 		}
+		draw_set_halign(fa_left);
 		changeScore = 0;
 		ini_close();
 	}

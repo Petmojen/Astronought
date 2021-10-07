@@ -9,5 +9,5 @@ chargeGun = 0;
 
 //global variable
 global.superPoints = 0;
-global.gameOver = 0;
+global.gameOver = 2;
 global.playerHealthPoints = 100;
