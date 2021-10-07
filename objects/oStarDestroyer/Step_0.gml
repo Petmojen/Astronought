@@ -52,9 +52,9 @@ if(global.stage == 1.5){
 		turbo = 0.5;
 	}
 	if(x <= -425){
-		global.targetTimer = 60;
 		x = room_width + 760;
 		y = -41;
+		global.targetTimer = 60;
 		destoyerSize = 1.8;
 		alphaFloat = 1;
 		hangar01x = -47;
@@ -120,6 +120,8 @@ if(global.targetTimer = 0 && global.stage = 1){
 
 //Boss
 } else if (global.stage = 4){
+	x = room_width + 760;
+	y = -41;
 	if(x <= 710){
 		speedFloat = 0;
 		randEnemies = irandom_range(0, 2);
