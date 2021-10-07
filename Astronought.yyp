@@ -29,6 +29,7 @@
     {"id":{"name":"oStarDestroyer","path":"objects/oStarDestroyer/oStarDestroyer.yy",},"order":0,},
     {"id":{"name":"PlayerHit","path":"sounds/PlayerHit/PlayerHit.yy",},"order":0,},
     {"id":{"name":"shooterJet","path":"sprites/shooterJet/shooterJet.yy",},"order":0,},
+    {"id":{"name":"credits","path":"sprites/credits/credits.yy",},"order":24,},
     {"id":{"name":"LittleBoy","path":"sprites/LittleBoy/LittleBoy.yy",},"order":3,},
     {"id":{"name":"PlayerShoot","path":"sounds/PlayerShoot/PlayerShoot.yy",},"order":1,},
     {"id":{"name":"oJetpackFlames","path":"objects/oJetpackFlames/oJetpackFlames.yy",},"order":5,},

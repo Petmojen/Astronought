@@ -77,5 +77,11 @@ if(global.playerHealthPoints <= 0){
 x += playerPosX;
 y += playerPosY;
 
+if(global.stage != 4.25){
+	clampY = 32
+} else {
+	clampY = 350;
+}
+
 x = clamp(x, 32, room_width-32);
-y = clamp(y, 32, room_height-32);
+y = clamp(y, clampY, room_height-32);
