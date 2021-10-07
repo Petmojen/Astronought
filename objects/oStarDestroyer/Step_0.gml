@@ -6,6 +6,7 @@ image_alpha = alphaFloat;
 global.targetTimer -= 1;
 stopEnemies -= 1;
 clamp(stopEnemies, 0, 1800);
+show_debug_message(global.stage);
 
 if(global.stage == 1.5){
 	if(x >= -300 && global.targetTimer <= 0){
@@ -120,8 +121,6 @@ if(global.targetTimer = 0 && global.stage = 1){
 
 //Boss
 } else if (global.stage = 4){
-	x = room_width + 760;
-	y = -41;
 	if(x <= 710){
 		speedFloat = 0;
 		randEnemies = irandom_range(0, 2);
