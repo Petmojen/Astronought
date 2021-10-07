@@ -22,7 +22,6 @@ hangar02x = 18;
 hangary = 14;
 
 stopEnemies = 1800;
-wait = 420;
 
 //Variables for bossfight 4.5
 bossHover = 0.1;
