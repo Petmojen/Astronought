@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "sEnemies",
-    "path": "folders/Sprites/sEnemies.yy",
+    "name": "StarDestroyer",
+    "path": "folders/Sprites/sEnemies/StarDestroyer.yy",
   },
   "resourceVersion": "1.0",
   "name": "StarDestroyer",

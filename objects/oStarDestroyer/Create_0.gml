@@ -6,7 +6,7 @@ enemyArray[1] = oShooter;
 enemyArray[2] = oLittleBoy;
 
 speedFloat = 0.25;
-
+turbo = 0;
 destoyerSize = 0.25;
 alphaFloat = 0.5;
 
