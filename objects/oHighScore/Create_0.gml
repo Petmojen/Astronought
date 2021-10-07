@@ -1,4 +1,4 @@
-checkHighscore = 1;
+checkHighscore = 0;
 changeScore = 0;
 
 drawHighScore[0] = "";
