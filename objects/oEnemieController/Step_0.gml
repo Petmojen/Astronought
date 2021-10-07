@@ -9,11 +9,9 @@ if(global.scoreSystem < 20000 && global.stage = 1) {
         instance_create_depth(room_width+50, speederYPos, 1, enemyArray[0]);
     }
 } else if(global.scoreSystem >= 20000 && global.stage = 1) {
-	if(global.stage = 1){
 	global.stage = 1.5;
 	global.targetTimer = 120;
 	spawnTimer = 100000;
-	}
 }
 
 if(global.scoreSystem >= 20000 && global.scoreSystem < 150000 && global.stage = 2) {
@@ -27,14 +25,12 @@ if(global.scoreSystem >= 20000 && global.scoreSystem < 150000 && global.stage = 
 		instance_create_depth(room_width+50, shooterYPos, 1, enemyArray[1]);	
 	}
 } else if(global.scoreSystem >= 150000 && global.stage = 2){
-	if(global.stage = 2){
 	global.stage = 2.5;
 	global.targetTimer = 120;
 	spawnTimer = 100000;
-	}
 }
 
-if(global.scoreSystem >= 150000 && global.stage = 3){
+if(global.scoreSystem >= 150000 && global.scoreSystem < 300000 && global.stage = 3){
 	if (spawnTimer = 0) {
 		shooterYPos = random_range(100, room_height - 100);
 		littleBoyYPos = random_range(100, room_height - 100);
@@ -44,11 +40,9 @@ if(global.scoreSystem >= 150000 && global.stage = 3){
 		}
 	}
 } else if(global.scoreSystem >= 300000 && global.stage = 3){
-	if(global.stage = 3){
 		global.stage = 3.5;
 		global.targetTimer = 120;
 		spawnTimer = 100000;
-	}
 }
 
 

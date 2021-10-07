@@ -40,6 +40,23 @@ if(global.stage == 1.5){
 		speedFloat = 0.15;
 		global.stage = 3;
 	}
+} else if (global.stage == 3.5){
+	if(x >= -425 && global.targetTimer <= 0){
+		speedFloat = 8;
+	}
+	if(x <= -425){
+		oEnemieController.spawnTimer = 600;
+		global.targetTimer = 60;
+		x = room_width + 760;
+		y = -41;
+		destoyerSize = 1.8;
+		alphaFloat = 1;
+		hangar01x = -29;
+		hangar02x = 71;
+		hangary = 51;
+		speedFloat = 0.5;
+		global.stage = 4;
+	}	
 }
 
 //Stage 1
@@ -95,6 +112,11 @@ if(global.targetTimer = 0 && global.stage = 1){
 	global.targetTimer = 60;
 
 //Boss
-} else if (global.targetTimer = 0 && global.stage = 4){
-	//Boss code here
+} else if (global.stage = 4){
+	if(x <=710){
+		speedFloat = 0;
+	}
+	
+} else if (global.stage = 4.5){
+	
 }

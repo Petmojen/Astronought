@@ -1,5 +1,6 @@
 if(global.playerHealthPoints < 100) {
 global.playerHealthPoints += 20;
+clamp(global.playerHealthPoints, 0, 100);
 }
 instance_destroy();
 
