@@ -19,10 +19,7 @@ switch(drawDecide){
 		if keyboard_check_pressed(vk_escape){drawDecide = 0};
 		break;
 	case 4:
-		draw_set_font(fFipps);
-		draw_set_color(c_white);
-		for(i = 0; i < creditsLength; i++){
-			draw_text(room_width/2 - 100, room_height/2 - 75 + i*25, credits[i]);
-		}
+		draw_sprite(credits, image_index, room_width/2, room_height/2);
 		if keyboard_check_pressed(vk_escape){drawDecide = 0};
+		break;
 }
