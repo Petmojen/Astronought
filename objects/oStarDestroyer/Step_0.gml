@@ -126,7 +126,7 @@ if(global.targetTimer = 0 && global.stage = 1){
 		randEnemies2 = irandom_range(0, 2);
 		oEnemieController.spawnTimer = 60;
 		global.targetTimer = 30;
-		stopEnemies = 1800;
+		stopEnemies = 1600;
 		global.stage = 4.25;
 	}
 } else if(global.stage = 4.25 && global.targetTimer = 0){
@@ -203,12 +203,9 @@ if(global.targetTimer = 0 && global.stage = 1){
 
 else if (global.stage = 4.75)
 {
-	
-	
-	
 	if (alarm[0] == -1)
     {
-        alarm[0] = (room_speed * 5);
+        alarm[0] = (room_speed * 20);
     }
 	
 	bossShootingFrame -= 1;
@@ -253,23 +250,25 @@ else if (global.stage = 4.75)
 		
 	}
 	
-	if(y <= (checkPlayerPos.y - 60) || y >= (checkPlayerPos.y - 165))
+	if(y < checkPlayerPos.y - 60)
 	{
-		move_towards_point(x, checkPlayerPos.y-125, 0.75)
+		y += 0.5;
 	}
-	else
+	else if (y > checkPlayerPos.y - 105)
 	{
-		speed = 0;
+		y -= 0.5;
 	}
 }
 
 else if(global.stage = 4.80)
 {
 	speedFloat = -4;
-	show_debug_message(x)
-	if(x >= room_width + 421)
+	
+	if(x >= room_width + 842)
 	{
-		speedFloat = 0;
-		global.stage = 3.5;
+		x = room_width + 760;
+		y = -41;
+		speedFloat = 6;
+		global.stage = 4;
 	}
 }

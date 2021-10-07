@@ -1,6 +1,8 @@
 randomize();
 checkPlayerPos = instance_id_get(0);
 
+bossHP = 1000;
+
 enemyArray[0] = oSpeeder;
 enemyArray[1] = oShooter;
 enemyArray[2] = oLittleBoy;
