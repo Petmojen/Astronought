@@ -126,7 +126,7 @@ if(global.targetTimer = 0 && global.stage = 1){
 		randEnemies2 = irandom_range(0, 2);
 		oEnemieController.spawnTimer = 60;
 		global.targetTimer = 30;
-		stopEnemies = 1600;
+		stopEnemies = 120;
 		global.stage = 4.25;
 	}
 } else if(global.stage = 4.25 && global.targetTimer = 0){
@@ -247,14 +247,17 @@ else if (global.stage = 4.75)
 	
 	if(missileCounter = 2)
 	{
-		
+		with(instance_create_depth(x, 100, 5, oMissile)){
+			speed -= 5;
+		}
+		missileCounter = 0;
 	}
 	
-	if(y < checkPlayerPos.y - 60)
+	if(y < checkPlayerPos.y - 100)
 	{
 		y += 0.5;
 	}
-	else if (y > checkPlayerPos.y - 105)
+	else if (y > checkPlayerPos.y - 130)
 	{
 		y -= 0.5;
 	}

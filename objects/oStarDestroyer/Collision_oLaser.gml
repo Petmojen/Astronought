@@ -11,4 +11,5 @@ if(bossHP = 0)
 	instance_destroy(oStarJet01);
 	instance_destroy(oStarJet02);
 	instance_destroy(oStarJet03);
+	global.gameOver = 2;
 }

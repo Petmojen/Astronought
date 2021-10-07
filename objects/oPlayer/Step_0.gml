@@ -28,7 +28,7 @@ if(weaponSelect = 1){
 			fireBool = 1;
 			shootingCooldown = 60;
 			chargeRate = 0;
-			//audio_play_sound(PlayerShoot, 10, false); bigger sound
+			
 		}
 	} else {
 		instance_destroy(oChargeGun);
@@ -72,6 +72,11 @@ if(global.playerHealthPoints <= 0){
 	global.gameOver	= 1;
 	instance_destroy(oJetpackFlames);
 	instance_destroy();
+	instance_destroy(oStarDestroyer);
+	instance_destroy(oStarJet01);
+	instance_destroy(oStarJet02);
+	instance_destroy(oStarJet03);
+	instance_destroy(oMissile);
 }
 
 x += playerPosX;
@@ -84,4 +89,4 @@ if(global.stage != 4.25){
 }
 
 x = clamp(x, 32, room_width-32);
-y = clamp(y, clampY, room_height-32);
+y = clamp(y, clampY, room_height-64);
