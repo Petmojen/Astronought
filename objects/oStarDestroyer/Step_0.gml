@@ -9,6 +9,7 @@ stopEnemies -= 1;
 if(global.stage == 1.5){
 	if(x >= -300 && global.targetTimer <= 0){
 		speedFloat = 8;
+		turbo = 0.5;
 	}
 	if(x <= -300){
 		oEnemieController.spawnTimer = 600;
@@ -21,12 +22,14 @@ if(global.stage == 1.5){
 		destoyerSize = 0.5;
 		alphaFloat = 0.75;
 		speedFloat = 0.25;
+		turbo = 0;
 		oPlanetController.planetDepth = 550;
 		global.stage = 2;
 	}
 } else if (global.stage == 2.5){
 	if(x >= -425 && global.targetTimer <= 0){
 		speedFloat = 8;
+		turbo = 0.5;
 	}
 	if(x <= -425){
 		oEnemieController.spawnTimer = 600;
@@ -39,11 +42,13 @@ if(global.stage == 1.5){
 		hangar02x = 71;
 		hangary = 51;
 		speedFloat = 0.15;
+		turbo = 0;
 		global.stage = 3;
 	}
 } else if (global.stage == 3.5){
 	if(x >= -425 && global.targetTimer <= 0){
 		speedFloat = 8;
+		turbo = 0.5;
 	}
 	if(x <= -425){
 		global.targetTimer = 60;
@@ -55,6 +60,7 @@ if(global.stage == 1.5){
 		hangar02x = 123;
 		hangary = 89;
 		speedFloat = 6;
+		turbo = 0;
 		global.stage = 4;
 	}	
 }
