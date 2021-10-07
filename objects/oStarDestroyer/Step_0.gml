@@ -184,20 +184,34 @@ if(global.targetTimer = 0 && global.stage = 1){
 	if(y > -375){
 		y -= 1;
 	} else {
-		global.stage = 4.5;
-	}
-} else if (global.stage = 4.5){
-	if(x < room_width){
 		x = 2222;
 		y = random_range(96,544);
+		global.stage = 4.5;
 	}
-	else if(x <= 1568  && x >= 1504){
+} else if (global.stage = 4.5)
+{
+
+	if(x <= 1536) 
+	{
 		global.stage = 4.75;
 		speedFloat = 0;
 	}
+	else
+	{
+		speedFloat = 4;
+	}
 }
+
 else if (global.stage = 4.75)
 {
+	
+	
+	
+	if (alarm[0] == -1)
+    {
+        alarm[0] = (room_speed * 5);
+    }
+	
 	bossShootingFrame -= 1;
 	if(bossWeaponType = 1 && bossShootingFrame = 0)
 	{
@@ -247,5 +261,16 @@ else if (global.stage = 4.75)
 	else
 	{
 		speed = 0;
+	}
+}
+
+else if(global.stage = 4.80)
+{
+	speedFloat = -4;
+	show_debug_message(x)
+	if(x >= room_width + 421)
+	{
+		speedFloat = 0;
+		global.stage = 3.5;
 	}
 }
