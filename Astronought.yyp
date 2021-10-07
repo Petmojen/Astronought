@@ -10,6 +10,7 @@
     {"id":{"name":"oShooterIdle","path":"objects/oShooterIdle/oShooterIdle.yy",},"order":2,},
     {"id":{"name":"Stars","path":"sprites/Stars/Stars.yy",},"order":2,},
     {"id":{"name":"oSuperBar","path":"objects/oSuperBar/oSuperBar.yy",},"order":2,},
+    {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},"order":2,},
     {"id":{"name":"oLittleBoyLaser","path":"objects/oLittleBoyLaser/oLittleBoyLaser.yy",},"order":3,},
     {"id":{"name":"LittleBoyLaser","path":"sprites/LittleBoyLaser/LittleBoyLaser.yy",},"order":4,},
     {"id":{"name":"healthBarBorder","path":"sprites/healthBarBorder/healthBarBorder.yy",},"order":4,},
@@ -38,6 +39,7 @@
     {"id":{"name":"oJetpackFlames","path":"objects/oJetpackFlames/oJetpackFlames.yy",},"order":5,},
     {"id":{"name":"sBerg01","path":"sprites/sBerg01/sBerg01.yy",},"order":0,},
     {"id":{"name":"oBoss01","path":"objects/oBoss01/oBoss01.yy",},"order":0,},
+    {"id":{"name":"oHighScore","path":"objects/oHighScore/oHighScore.yy",},"order":5,},
     {"id":{"name":"oStarJet01","path":"objects/oStarJet01/oStarJet01.yy",},"order":4,},
     {"id":{"name":"fFipps","path":"fonts/fFipps/fFipps.yy",},"order":0,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":1,},
@@ -90,6 +92,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
