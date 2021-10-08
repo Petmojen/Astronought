@@ -33,4 +33,3 @@ ini_open("highscore.ini"){
 		}
 	}
 ini_close();
-show_debug_message(drawHighScore);

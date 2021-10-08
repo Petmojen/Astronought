@@ -4,7 +4,6 @@ if(global.checkHighscore = 1){
 			for(i = 5; i <= string_length(drawHighScore[a]); i++){
 				scoreStore += string_char_at(drawHighScore[a], i);
 			}
-			//check if bigger than global.score
 			if(scoreStore < global.scoreSystem){
 				for(j = 9; j >= a; j -= 1){
 					if(j > 0){
