@@ -17,18 +17,25 @@ if(keyboard_check(ord("1"))){
 
 if(keyboard_check(vk_space)){movementSpeed = 3;}else{movementSpeed = 6;};
 
+blendWait -= 1;
+if(blendWait >= 0){
+	image_blend = c_red;
+} else {	
+	image_blend = c_white;
+}
+
 if(weaponSelect = 1){
 	shootingCooldown -= 1;
 	shootingCooldown = clamp(shootingCooldown, 0, 10);
 	if(keyboard_check(vk_space) && shootingCooldown <= 0){
 		chargeRate += 1;
-		clamp(chargeRate, 0, 120);
+		clamp(chargeRate, 0, 60);
 		scaleY = chargeRate/80;
 		scaleX = chargeRate/20;
 		if(chargeGun = 0){instance_create_depth(x+36, y-6, 1, oChargeGun); chargeGun = 1};
-		if(chargeRate >= 120) {
+		if(chargeRate >= 60) {
 			fireBool = 1;
-			shootingCooldown = 60;
+			shootingCooldown = 30;
 			chargeRate = 0;
 			
 		}
@@ -69,8 +76,6 @@ if(fireBool = 1){
 		chargeGun = 0;
 		fireBool = 0;
 }
-
-show_debug_message(movementSpeed);
 
 if(global.playerHealthPoints <= 0){
 	global.gameOver	= 1;

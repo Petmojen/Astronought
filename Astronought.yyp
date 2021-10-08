@@ -54,6 +54,7 @@
     {"id":{"name":"Planet03","path":"sprites/Planet03/Planet03.yy",},"order":2,},
     {"id":{"name":"JetpackFlame","path":"sprites/JetpackFlame/JetpackFlame.yy",},"order":2,},
     {"id":{"name":"StarController","path":"objects/StarController/StarController.yy",},"order":2,},
+    {"id":{"name":"redPlayer","path":"sprites/redPlayer/redPlayer.yy",},"order":6,},
     {"id":{"name":"MenuUpDown","path":"sounds/MenuUpDown/MenuUpDown.yy",},"order":2,},
     {"id":{"name":"oStarJet03","path":"objects/oStarJet03/oStarJet03.yy",},"order":6,},
     {"id":{"name":"healthBar","path":"sprites/healthBar/healthBar.yy",},"order":1,},

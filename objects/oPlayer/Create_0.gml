@@ -6,6 +6,8 @@ chargeRate = 0;
 fireBool = 0;
 weaponSelect = 0;
 chargeGun = 0;
+blendWait = -1;
+
 
 //global variable
 global.superPoints = 0;
