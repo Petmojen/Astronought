@@ -1,6 +1,6 @@
 playerPosX = 0;
 playerPosY = 0;
-movementSpeed = 4;
+movementSpeed = 6;
 shootingCooldown = 25;
 chargeRate = 0;
 fireBool = 0;

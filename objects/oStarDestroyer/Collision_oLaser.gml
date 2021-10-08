@@ -1,7 +1,9 @@
 if(global.stage = 4.75){
+	instance_create_depth(x,y,300, oWhiteDestroyer);
 	bossHP -= 1;	
 	instance_destroy(other);
 	global.scoreSystem += 1000;
+	
 }
 
 if(bossHP = 0)

@@ -2,8 +2,9 @@ if(changeScore = 1){
 	draw_set_halign(fa_center);
 	draw_set_font(fFipps);
 	draw_text(room_width/2, room_height/2, textInput);
+	draw_text(room_width/2, room_height/2+50, "_ _ _");
 	if(string_length(textInput) <= 2){
-		textInput = keyboard_string;
+		textInput = string_upper(keyboard_string);
 	} else {
 		newHighScore = textInput + "/" + string(global.scoreSystem);
 		drawHighScore[a] = newHighScore;

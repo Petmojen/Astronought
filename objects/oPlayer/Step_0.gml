@@ -15,6 +15,8 @@ if(keyboard_check(ord("1"))){
 	weaponSelect = 1;
 }
 
+if(keyboard_check(vk_space)){movementSpeed = 3;}else{movementSpeed = 6;};
+
 if(weaponSelect = 1){
 	shootingCooldown -= 1;
 	shootingCooldown = clamp(shootingCooldown, 0, 10);
@@ -67,6 +69,8 @@ if(fireBool = 1){
 		chargeGun = 0;
 		fireBool = 0;
 }
+
+show_debug_message(movementSpeed);
 
 if(global.playerHealthPoints <= 0){
 	global.gameOver	= 1;
