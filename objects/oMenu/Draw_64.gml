@@ -1,6 +1,7 @@
 
 switch(drawDecide){
 	case 0:
+		//title
 		draw_set_font(fOver_There);
 		draw_text(x, y, "Astronought");
 		draw_set_font(fFipps);
@@ -11,13 +12,13 @@ switch(drawDecide){
 			draw_text_color(x, y + 250 + i*25, printText[i], color, color, color, color, 1);
 		}
 		break;
-	case 1:
-		break;
 	case 2:
+		//controls
 		draw_sprite(controlls, image_index, room_width/2, room_height/2);
 		if keyboard_check_pressed(vk_escape){drawDecide = 0};
 		break;
 	case 3:
+		//highscore
 		draw_set_halign(fa_center);
 		draw_set_font(fOver_There);
 		draw_text(room_width/2, room_height/5, "Highscore");
@@ -28,9 +29,11 @@ switch(drawDecide){
 			}
 		}
 		if keyboard_check_pressed(vk_escape){drawDecide = 0};
+		draw_sprite(BackESC, image_index, room_width/2, room_height/2 * 1.60);
 		draw_set_halign(fa_left);
 		break;
 	case 4:
+		//credits
 		draw_sprite(credits, image_index, room_width/2, room_height/2);
 		if keyboard_check_pressed(vk_escape){drawDecide = 0};
 		break;

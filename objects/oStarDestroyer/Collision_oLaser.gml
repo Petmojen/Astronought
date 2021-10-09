@@ -3,7 +3,7 @@ if(global.stage = 4.75){
 	bossHP -= 1;	
 	instance_destroy(other);
 	global.scoreSystem += 1000;
-	
+	inputAccept = false;	
 }
 
 if(bossHP = 0)
