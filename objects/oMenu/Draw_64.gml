@@ -25,7 +25,7 @@ switch(drawDecide){
 		draw_set_font(fFipps);
 		ini_open("highscore.ini"){
 			for(i = 0; i <= 9; i++){
-				draw_text(room_width/2, room_height/3 + i*30, string(i + 1) + " : " + ini_read_string("highscore", i, ":No score"));
+				draw_text(room_width/2, room_height/3 + i*30, string(i + 1) + " : " + ini_read_string("highscore", i, "No score"));
 			}
 		}
 		if keyboard_check_pressed(vk_escape){drawDecide = 0};
