@@ -6,7 +6,7 @@ if(shootingFrame <= 0)
 		speed -= 0.25;
 	}
 
-	shootingFrame = 380;
+	shootingFrame = 360;
 	
 }
 

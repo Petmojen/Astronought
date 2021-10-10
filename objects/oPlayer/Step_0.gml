@@ -19,7 +19,7 @@ if(keyboard_check(ord("1"))){
 	weaponSelect = 1;
 }
 
-if(keyboard_check(vk_space)){movementSpeed = 3;}else{movementSpeed = 6;};
+if(keyboard_check(vk_space)){movementSpeed = 4;}else{movementSpeed = 6;};
 
 blendWait -= 1;
 if(blendWait >= 0){

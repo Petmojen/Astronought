@@ -31,7 +31,7 @@ ini_open("highscore.ini"){
 	if(ini_read_string("aLive", 1, "create") != 1){
 		ini_write_string("aLive", 1, "1");
 		for(i = 0; i <= 9; i++){
-			ini_write_string("highscore", i, "AAA/0");	
+			ini_write_string("highscore", i, "AAA|0");	
 		}
 	}
 }

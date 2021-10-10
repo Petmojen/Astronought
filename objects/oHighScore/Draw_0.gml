@@ -50,7 +50,7 @@ if(changeScore = 1){
 		draw_text_color(room_width/2, room_height/2 + 150, "Press ENTER to finish input", color, color, color, color, 1);
 		
 		if(keyboard_check_pressed(vk_enter)){
-			newHighScore = firstAlph + secondAlph + thirdAlph + " | " + string(global.scoreSystem);
+			newHighScore = firstAlph + secondAlph + thirdAlph + "|" + string(global.scoreSystem);
 			drawHighScore[a] = newHighScore;
 			ini_open("highscore.ini"){
 				for(i = 0; i <= 9; i++){
