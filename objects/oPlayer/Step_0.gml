@@ -12,6 +12,8 @@ var moveUpDown = key_down - key_up;
 playerPosX = moveLeftRight * movementSpeed;
 playerPosY = moveUpDown * movementSpeed;
 
+if (keyboard_check_pressed(vk_escape)) {room_goto_previous();}
+if (keyboard_check_pressed(ord("R"))) {room_goto(Room1);}
 
 if(keyboard_check(ord("1"))){
 	weaponSelect = 0;

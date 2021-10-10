@@ -13,4 +13,5 @@ if room = Room1
 		audio_stop_sound(_01___blaster_master_opening);
 	}
 	audio_play_sound(_02___area_1, 10, true);
+	if(keyboard_check_pressed(ord("R"))){audio_stop_sound(_02___area_1);audio_play_sound(_02___area_1, 10, true);}
 }
